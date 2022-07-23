@@ -1,7 +1,7 @@
 # AGTHARN's Optimization Theories
 [![Hits](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations.svg?view=today-total&style=flat-square&label=views)](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations/)
 
-## PLEASE READ!
+## PLEASE READ! 23/7/2022
 **This is NOT MEANT FOR ANY PRODUCTION PURPOSES**! All of these methods can cause problems for your server, especially if your server requires PvP action. It is indeed undeniable that PlayerAuthInput is way better than PlayerMovement. **I only made this so as to document my findings after my experiments on PMMP**. It was something I never intended to have negative comments about as this was never meant to be applied to PMMP's repository. Even if you used these methods, you MUST accept all the consequences involved! I will not be reponsible due to how this was **documented only for my friends**! Overall, all these methods are entirely argueable.
 
 ### **THESE WERE EXPERIMENTS! DO NOT TURN THEM INTO IDEAS!**
