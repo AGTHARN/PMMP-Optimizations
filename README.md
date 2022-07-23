@@ -2,9 +2,11 @@
 [![Hits](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations.svg?view=today-total&style=flat-square&label=views)](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations/)
 
 ## PLEASE READ!
-**This is NOT MEANT FOR ANY PRODUCTION PURPOSES! All of these methods can cause problems for your server, especially if your server requires PvP action. It is indeed undeniable that PlayerAuthInput is way better than PlayerMovement. I only made this so as to document my findings after my experiments on PMMP. It was something I never intended to have negative comments about as this was never meant to be applied to PMMP's repository. Even if you used these methods, you MUST accept all the consequences involved! I will not be reponsible due to how this was documented only for my friends! Overall, all these methods are entirely argueable.**
+**This is NOT MEANT FOR ANY PRODUCTION PURPOSES**! All of these methods can cause problems for your server, especially if your server requires PvP action. It is indeed undeniable that PlayerAuthInput is way better than PlayerMovement. **I only made this so as to document my findings after my experiments on PMMP**. It was something I never intended to have negative comments about as this was never meant to be applied to PMMP's repository. Even if you used these methods, you MUST accept all the consequences involved! I will not be reponsible due to how this was **documented only for my friends**! Overall, all these methods are entirely argueable.
 
-## Why I wanted to experiment with these methods?
+### **THESE WERE EXPERIMENTS! DO NOT TURN THEM INTO IDEAS!**
+
+## Why did I want to spend time on such experiments?
 I myself run a PocketMine-MP (PMMP) server, and I've been dealing with the same problem since the server's inception - lag brought on by high player counts rendering PMMP servers virtually unplayable.
 
 Many individuals have frequently used the argument that the problem is with the server's plugins or that PMMP is single-threaded. That's not totally true, but it's comparable.
