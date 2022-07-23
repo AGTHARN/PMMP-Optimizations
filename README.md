@@ -1,6 +1,10 @@
 # AGTHARN's Optimization Theories
 [![Hits](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations.svg?view=today-total&style=flat-square&label=views)](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations/)
 
+## PLEASE READ!
+**This is NOT MEANT FOR ANY PRODUCTION PURPOSES! All of these methods can cause problems for your server, especially if your server requires PvP action. It is indeed undeniable that PlayerAuthInput is way better than PlayerMovement. I only made this so as to document my findings after my experiments on PMMP. It was something I never intended to have negative comments about as this was never meant to be applied to PMMP's repository. Even if you used these methods, you MUST accept all the consequences involved! I will not be reponsible due to how this was documented only for my friends! Overall, all these methods are entirely argueable.**
+
+## Why I wanted to experiment with these methods?
 I myself run a PocketMine-MP (PMMP) server, and I've been dealing with the same problem since the server's inception - lag brought on by high player counts rendering PMMP servers virtually unplayable.
 
 Many individuals have frequently used the argument that the problem is with the server's plugins or that PMMP is single-threaded. That's not totally true, but it's comparable.
@@ -27,6 +31,8 @@ The modifications I've made are ones that a skilled developer could do with ease
 - [TPS Catch-up](#%EF%B8%8F-tps-catch-up)
 
 ### ➡️ World Tick
+__**SERVER TICK ≠ WORLD TICK**__
+
 A ticking system is a really great way to have more control over the processes in a server. It enables management of the actions carried out with each tick.
 
 This system could be great, but it might also have unfavorable implications, including performance degradation. Yes, there would be numerous issues without the ticking system, but not every action must coincide with every tick.
@@ -81,7 +87,7 @@ Lag can cause the server to slow down by several ticks, which makes the server s
 
 I am aware that skipping ticks isn't a great idea, however, it may provide room for other actions. 
 
-Is this worth it? Not really and not recommended.
+Is this worth it? __**Not really and not recommended.**__
 
 ### ➡️ TPS Catch-up
 This is entirely different from Tick Skipping. When the server is lagging behind in some ticks, the server will **tick even faster until its back on track**. This is a way to make the server act as though it is running late for school.
