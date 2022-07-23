@@ -13,12 +13,13 @@ One day, I pondered how much I could change PMMP in order to push it as far as i
 
 **Due to the player count, the findings may be skewed, however if necessary, you can perform your own computations.**
 
-| Before Modifications |
+| [Before Modifications](https://timings.pmmp.io/?id=222286) |
 | ----------- |
 | ![before](https://user-images.githubusercontent.com/63234276/180207286-eb69ac8e-697e-4e0d-903d-bdaa6a023248.png) |
 
-| After Modifications |
+| [After Modifications](https://timings.pmmp.io/?id=227338) |
 | ----------- |
+| (player count is incorrect!) |
 | ![after](https://user-images.githubusercontent.com/63234276/180207462-6a27702e-25f9-4731-bc7e-11b63d17b5d4.png) |
 
 The modifications I've made are ones that a skilled developer could do with ease. Since they are not the finest, I do not intend to release a fork of these modifications. However, I'd like to see somebody else give it a go.
