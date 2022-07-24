@@ -45,7 +45,7 @@ The final option would be to prevent the spawning of any XP orbs with Bottle of 
 - **Problems** [🔥]
 - **Safe** [✅]
 
-### PHP 8 JIT
+### ➡️ PHP 8 JIT
 A just-in-time compiler was added to PHP 8 that significantly speeds up code execution. The JIT, however, is still in its experimental stage and presents certain [complications](https://github.com/dktapps/php-8-jit-bugs), particularly when utilizing the xDebug tool for debugging. Occasionally, depending on the circumstances, it can even result in decreased performance. 
 
 Enabling can be done within `php.ini`. Further configuration may be required.
