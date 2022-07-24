@@ -1,0 +1,48 @@
+<h1 id="somewhat-reliable-methods">Somewhat Reliable Methods</h1>
+<p>Methods that can be arguable at times and may require you to fix multiple problems.</p>
+<h1 id="list-of-contents">✔️ List of Contents</h1>
+<ul>
+<li><a href="#%EF%B8%8F-world-tick">World Tick</a></li>
+<li><a href="#%EF%B8%8F-movement-system-playerauthinputpacket---playermovementpacket">Movement System</a></li>
+<li><a href="#%EF%B8%8F-tps-catch-up">TPS Catch-up</a></li>
+</ul>
+<h3 id="world-tick">➡️ World Tick</h3>
+<p><strong><strong>SERVER TICK ≠ WORLD TICK</strong></strong></p>
+<p>A ticking system is a really great way to have more control over the processes in a server. It enables management of the actions carried out with each tick.</p>
+<p>This system could be great, but it might also have unfavorable implications, including performance degradation. Yes, there would be numerous issues without the ticking system, but not every action must coincide with every tick.</p>
+<p>One of those things would be the world tick. Now, compare these two results:</p>
+<p>(before) <img src="https://user-images.githubusercontent.com/63234276/180412244-695a4f69-54e7-42f6-88d1-017edbf6ab83.png" alt="before" /></p>
+<p>(after)<br />
+<img src="https://user-images.githubusercontent.com/63234276/180412693-c29d3ac2-606c-44a8-bb0d-ab5c2bb9701c.png" alt="after" /></p>
+<p>In light of the aforementioned findings, it is evident that world ticking before my modification used more resources than world ticking after my modification.</p>
+<p>How was this change implemented? Simply said, <strong>only tick worlds at the tenth tick rather than the first</strong> (it doesn’t have to exactly be on the tenth). The consequences of doing so, such as delayed block updates, delayed block placements and delayed entity updates, are fairly obvious. You must be <strong>aware of how to rectify these problems</strong>, which will take some time. You must accept this if you want to see such performance improvements.</p>
+<ul>
+<li><strong>Efficient</strong> [✅✅✅]</li>
+<li><strong>Difficulty</strong> [⭐⭐⭐]</li>
+<li><strong>Problems</strong> [🔥🔥🔥]</li>
+<li><strong>Safe</strong> [❓]</li>
+</ul>
+<h3 id="movement-system-playerauthinputpacket---playermovementpacket">➡️ Movement System (PlayerAuthInputPacket -&gt; PlayerMovementPacket)</h3>
+<p>You might occasionally ponder how a player sends movement packets to PMMP. Prior to being switched to PlayerAuthInputPacket in this <a href="https://github.com/pmmp/PocketMine-MP/commit/292827a311a8792718b6405975518ef923a47475">commit</a>, PMMP listened to PlayerMovementPacket.</p>
+<p>I’m not arguing that utilizing PlayerAuthInputPacket is bad since it really improves matters because it addresses more issues. But I believe that utilizing PlayerMovementPacket would greatly improve performance. It will affect how players move and using the old movement system is not always a good thing!</p>
+<p>Since PlayerAuthInputPacket is sent every tick, it <strong>“might cause some performance degradation”</strong>, according to the commit. However, my analysis shows that it significantly influences performance, particularly when there are several players present.</p>
+<p>Compare these two results:</p>
+<p>(before) <img src="https://user-images.githubusercontent.com/63234276/180415346-98236092-2110-49e7-9607-314aa352e3a7.png" alt="before" /></p>
+<p>(after)<br />
+<img src="https://user-images.githubusercontent.com/63234276/180415383-eb7f01b4-7ecb-4408-97a6-2724333137ef.png" alt="after" /></p>
+<p>As you can see, <strong>adopting the old movement method again actually significantly boosts performance</strong>. Since PlayerAuthInputPacket delivers many packets every tick, multiplied by the number of players on the server, it is more sluggish. Yes, PMMP has prevented additional movement updates if there has been no change in movement, however the entire process leading up to the check is significant enough to create delay.</p>
+<p>With this change, the movement-related function of PlayerAuthInputPacket would be reversed. But is it worth it?</p>
+<ul>
+<li><strong>Efficient</strong> [✅✅]</li>
+<li><strong>Difficulty</strong> [⭐⭐]</li>
+<li><strong>Problems</strong> [🔥]</li>
+<li><strong>Safe</strong> [✅]</li>
+</ul>
+<h3 id="tps-catch-up">➡️ TPS Catch-up</h3>
+<p>This is entirely different from <a href="https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md#%EF%B8%8F-tick-skipping">Tick Skipping</a>. When the server is lagging behind in some ticks, the server will <strong>tick even faster until its back on track</strong>. This is a way to make the server act as though it is running late for school.</p>
+<ul>
+<li><strong>Efficient</strong> [✅]</li>
+<li><strong>Difficulty</strong> [⭐⭐⭐]</li>
+<li><strong>Problems</strong> [🔥]</li>
+<li><strong>Safe</strong> [❓]</li>
+</ul>

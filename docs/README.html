@@ -1,0 +1,70 @@
+<h1 id="agtharns-optimization-theories">AGTHARN’s Optimization Theories</h1>
+<p><a href="https://hits.sh/github.com/AGTHARN/PMMP-Optimizations/"><img src="https://hits.sh/github.com/AGTHARN/PMMP-Optimizations.svg?view=today-total&amp;style=flat-square&amp;label=views" alt="Hits" /></a></p>
+<h2 id="please-read-2372022">PLEASE READ! 23/7/2022</h2>
+<p>The sole purpose of this was only to provide some light over the experiments I have done on PMMP to my friends. It was never intended for the public to read this. Although all the comments I have gotten were negative, I will not let your comments influence my work.</p>
+<p>This project was also <strong>NOT MEANT FOR ANY PRODUCTION PURPOSES</strong>. All of these methods can cause problems for your server, especially if your server requires PvP action. It is indeed undeniable that PlayerAuthInput is way better than PlayerMovement and I must accept that. <strong>I only made this so as to document my findings after my experiments on PMMP</strong>. Even if you used these methods, you MUST accept all the consequences involved! Overall, all these methods are entirely arguable.</p>
+<h3 id="these-are-experiments-do-not-turn-them-into-ideas"><strong>THESE ARE EXPERIMENTS! DO NOT TURN THEM INTO IDEAS!</strong></h3>
+<h2 id="why-did-i-want-to-spend-time-on-such-experiments">Why did I want to spend time on such experiments?</h2>
+<p>I myself run a PocketMine-MP (PMMP) server, and I’ve been dealing with the same problem since the server’s inception - lag brought on by high player counts rendering PMMP servers virtually unplayable.</p>
+<p>Many individuals have frequently used the argument that the problem is with the server’s plugins or that PMMP is single-threaded. That’s not totally true, but it’s comparable.</p>
+<p>One day, I pondered how much I could change PMMP in order to push it as far as it could go. The experiments I have produced offer favourable performance enhancements.</p>
+<h1 id="table-of-contents">🌟 Table of Contents</h1>
+<table>
+<colgroup>
+<col style="width: 61%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/AGTHARN/PMMP-Optimizations/blob/main/RELIABLE.md">Reliable Methods</a></td>
+<td>Methods that should be safe as long as you have an idea of what you’re doing</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/AGTHARN/PMMP-Optimizations/blob/main/SOMEWHAT_RELIABLE.md">Somewhat Reliable Methods</a></td>
+<td>Methods that can be arguable at times and may require you to fix multiple problems</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md">Unreliable Methods</a></td>
+<td>Methods that are entirely questionable and will definitely break mechanics in your server</td>
+</tr>
+</tbody>
+</table>
+<h1 id="timings">💡 Timings</h1>
+<p><strong>Due to the player count, the findings may be skewed, however if necessary, you can perform your own computations.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th><a href="https://timings.pmmp.io/?id=222286">Before Modifications</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://user-images.githubusercontent.com/63234276/180207286-eb69ac8e-697e-4e0d-903d-bdaa6a023248.png" alt="before" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="https://timings.pmmp.io/?id=227338">After Modifications</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(player count is incorrect! it’s a problem i have made on my end! however, since it is a skyblock server, the number of players is equivalent to the number of worlds loaded!)</td>
+</tr>
+<tr class="even">
+<td><img src="https://user-images.githubusercontent.com/63234276/180207462-6a27702e-25f9-4731-bc7e-11b63d17b5d4.png" alt="after" /></td>
+</tr>
+</tbody>
+</table>
+<p>The modifications I’ve made are ones that a skilled developer could do with ease. Since they are not the finest, I do not intend to release a fork of these modifications. However, I’d like to see somebody else give it a go.</p>
