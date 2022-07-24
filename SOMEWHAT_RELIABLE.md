@@ -26,6 +26,7 @@ In light of the aforementioned findings, it is evident that world ticking before
 How was this change implemented? Simply said, **only tick worlds at the tenth tick rather than the first** (it doesn't have to exactly be on the tenth). The consequences of doing so, such as delayed block updates, delayed block placements and delayed entity updates, are fairly obvious. You must be **aware of how to rectify these problems**, which will take some time. You must accept this if you want to see such performance improvements. 
 
 - **Efficient** [✅✅✅]
+- **Difficulty** [⭐⭐⭐]
 - **Problems** [🔥🔥🔥]
 - **Safe** [❓]
 
@@ -49,6 +50,7 @@ As you can see, **adopting the old movement method again actually significantly 
 With this change, the movement-related function of PlayerAuthInputPacket would be reversed. But is it worth it?
 
 - **Efficient** [✅✅]
+- **Difficulty** [⭐⭐]
 - **Problems** [🔥]
 - **Safe** [✅]
 
@@ -56,5 +58,6 @@ With this change, the movement-related function of PlayerAuthInputPacket would b
 This is entirely different from [Tick Skipping](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md#%EF%B8%8F-tick-skipping). When the server is lagging behind in some ticks, the server will **tick even faster until its back on track**. This is a way to make the server act as though it is running late for school.
 
 - **Efficient** [✅]
+- **Difficulty** [⭐⭐⭐]
 - **Problems** [🔥]
 - **Safe** [❓]
