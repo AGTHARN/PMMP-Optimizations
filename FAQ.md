@@ -44,3 +44,8 @@ I do also agree with you. Server authoritative movement will reduce the number o
 <br>
 I included tick skipping in that category for that purpose. This would be advantageous in terms of preserving the TPS. I do agree with you, though, that performing actions on certain ticks will be very difficult if ticks are skipped. Although I tested with it, tick skipping is not something I advise. 
 </details>
+
+<div align="right">
+  <p>Done reading this section?</p>
+    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/RELIABLE.md" target = "_self">Reliable Methods ➡️</a>
+</div>

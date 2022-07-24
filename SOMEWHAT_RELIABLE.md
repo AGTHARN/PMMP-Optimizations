@@ -61,3 +61,8 @@ This is entirely different from [Tick Skipping](https://github.com/AGTHARN/PMMP-
 - **Difficulty** [⭐⭐⭐]
 - **Problems** [🔥]
 - **Safe** [❓]
+
+<div align="right">
+  <p>Done reading this section?</p>
+    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md" target = "_self">Unreliable Methods ➡️</a>
+</div>

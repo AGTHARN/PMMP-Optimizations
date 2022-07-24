@@ -12,3 +12,8 @@ I am aware that skipping ticks isn't a great idea which is why this is entirely 
 - **Difficulty** [⭐]
 - **Problems** [🔥🔥🔥❗]
 - **Safe** [❌]
+
+<div align="right">
+  <p>Done reading this section?</p>
+    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/FAQ.md" target = "_self">FAQ ➡️</a>
+</div>
