@@ -13,7 +13,7 @@ I myself run a PocketMine-MP (PMMP) server, and I've been dealing with the same 
 
 Many individuals have frequently used the argument that the problem is with the server's plugins or that PMMP is single-threaded. That's not totally true, but it's comparable.
 
-One day, I pondered how much I could change PMMP in order to push it as far as it could go. The experiments I have produced offer favourable performance enhancements.
+One day, I pondered how much I could change PMMP in order to push it as far as it could go. The experiments I have produced offer favorable performance enhancements.
 
 # 🌟 Table of Contents
 | Type | Description |
@@ -21,6 +21,7 @@ One day, I pondered how much I could change PMMP in order to push it as far as i
 | [Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/RELIABLE.md) | Methods that should be safe as long as you have an idea of what you're doing |
 | [Somewhat Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/SOMEWHAT_RELIABLE.md) | Methods that can be arguable at times and may require you to fix multiple problems |
 | [Unreliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md) | Methods that are entirely questionable and will definitely break mechanics in your server |
+| [Frequently Asked Questions](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/FAQ.md) | Questions that you may have on this document |
 
 # 💡 Timings
 
