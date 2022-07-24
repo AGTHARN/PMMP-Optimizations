@@ -32,7 +32,7 @@ One day, I pondered how much I could change PMMP in order to push it as far as i
 
 | [After Modifications](https://timings.pmmp.io/?id=227338) |
 | ----------- |
-| (player count is incorrect!) |
+| (player count is incorrect! it's a problem i have made on my end! however, since it is a skyblock server, the number of players is equivalent to the number of worlds loaded!) |
 | ![after](https://user-images.githubusercontent.com/63234276/180207462-6a27702e-25f9-4731-bc7e-11b63d17b5d4.png) |
 
 The modifications I've made are ones that a skilled developer could do with ease. Since they are not the finest, I do not intend to release a fork of these modifications. However, I'd like to see somebody else give it a go.
