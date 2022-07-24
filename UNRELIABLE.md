@@ -8,7 +8,7 @@ Lag can cause the server to slow down by several ticks, which makes the server s
 
 I am aware that skipping ticks isn't a great idea which is why this is entirely unreliable. However, it may provide room for other actions. 
 
-- **Efficient** [✅]
+- **Efficiency** [✅]
 - **Difficulty** [⭐]
 - **Problems** [🔥🔥🔥❗]
 - **Safe** [❌]
