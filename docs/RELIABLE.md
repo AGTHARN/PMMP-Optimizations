@@ -58,5 +58,5 @@ Enabling can be done within `php.ini`. Further configuration may be required.
 
 <div align="right">
   <p>Done reading this section?</p>
-    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/SOMEWHAT_RELIABLE.md" target = "_self">Somewhat Reliable Methods ➡️</a>
+    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/SOMEWHAT_RELIABLE.md" target = "_self">Somewhat Reliable Methods ➡️</a>
 </div>

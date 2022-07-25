@@ -55,7 +55,7 @@ With this change, the movement-related function of PlayerAuthInputPacket would b
 - **Safe** [✅]
 
 ### ➡️ TPS Catch-up
-This is entirely different from [Tick Skipping](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md#%EF%B8%8F-tick-skipping). When the server is lagging behind in some ticks, the server will **tick even faster until its back on track**. This is a way to make the server act as though it is running late for school.
+This is entirely different from [Tick Skipping](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/UNRELIABLE.md#%EF%B8%8F-tick-skipping). When the server is lagging behind in some ticks, the server will **tick even faster until its back on track**. This is a way to make the server act as though it is running late for school.
 
 - **Efficiency** [✅]
 - **Difficulty** [⭐⭐⭐]
@@ -64,5 +64,5 @@ This is entirely different from [Tick Skipping](https://github.com/AGTHARN/PMMP-
 
 <div align="right">
   <p>Done reading this section?</p>
-    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md" target = "_self">Unreliable Methods ➡️</a>
+    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/UNRELIABLE.md" target = "_self">Unreliable Methods ➡️</a>
 </div>

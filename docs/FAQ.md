@@ -47,5 +47,5 @@ I included tick skipping in that category for that purpose. This would be advant
 
 <div align="right">
   <p>Done reading this section?</p>
-    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/RELIABLE.md" target = "_self">Reliable Methods ➡️</a>
+    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/RELIABLE.md" target = "_self">Reliable Methods ➡️</a>
 </div>

@@ -18,10 +18,10 @@ One day, I pondered how much I could change PMMP in order to push it as far as i
 # 🌟 Table of Contents
 | Type | Description |
 | ----------- | ------- |
-| [Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/RELIABLE.md) | Methods that should be safe as long as you have an idea of what you're doing |
-| [Somewhat Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/SOMEWHAT_RELIABLE.md) | Methods that can be arguable at times and may require you to fix multiple problems |
-| [Unreliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/UNRELIABLE.md) | Methods that are entirely questionable and will definitely break mechanics in your server |
-| [Frequently Asked Questions](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/FAQ.md) | Questions that you may have on this document |
+| [Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/RELIABLE.md) | Methods that should be safe as long as you have an idea of what you're doing |
+| [Somewhat Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/SOMEWHAT_RELIABLE.md) | Methods that can be arguable at times and may require you to fix multiple problems |
+| [Unreliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/UNRELIABLE.md) | Methods that are entirely questionable and will definitely break mechanics in your server |
+| [Frequently Asked Questions](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/FAQ.md) | Questions that you may have on this document |
 
 # 💡 Timings
 
