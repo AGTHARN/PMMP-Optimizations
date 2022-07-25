@@ -31,6 +31,8 @@ How was this change implemented? Simply said, **only tick worlds at the tenth ti
 - **Safe** [❓]
 
 ### ➡️ Movement System (PlayerAuthInputPacket -> PlayerMovementPacket)
+**UPDATE:** I must admit that this [commit](https://github.com/pmmp/PocketMine-MP/commit/01ca14c314f180441343bbdf6cff611064ebe330) along with other [commits](https://github.com/pmmp/PocketMine-MP/commits/5d9f78303726a6ba58cdda8231976f57a54a73c4) have helped to partially fix the problem. It does not, however, always stop or prevent initial sending of movement changes. I don't think that the changes made were an optimal one given that `handleMovement()` already checks for movement. 
+
 You might occasionally ponder how a player sends movement packets to PMMP. Prior to being switched to PlayerAuthInputPacket in this [commit](https://github.com/pmmp/PocketMine-MP/commit/292827a311a8792718b6405975518ef923a47475), PMMP listened to PlayerMovementPacket. 
 
 I'm not arguing that utilizing PlayerAuthInputPacket is bad since it really improves matters because it addresses more issues. But I believe that utilizing PlayerMovementPacket would greatly improve performance. It will affect how players move and using the old movement system is not always a good thing!
