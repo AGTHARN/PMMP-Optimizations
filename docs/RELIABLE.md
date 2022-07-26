@@ -6,6 +6,7 @@ Methods that should be safe as long as you have an idea of what you're doing.
 - [Unnecessary Entity Updates](#%EF%B8%8F-unnecessary-entity-updates)
 - [XP Orbs](#%EF%B8%8F-xp-orbs)
 - [PHP 8 JIT](#%EF%B8%8F-php-8-jit)
+- [Liquid Flow](#%EF%B8%8F-liquid-flow)
 
 ### ➡️ Asynchronous Explosion Calculator
 On PMMP, the explosion computation is not asynchronous. Given that you would be dealing with concurrent calculations, this assignment may prove to be difficult.
@@ -55,6 +56,18 @@ Enabling can be done within `php.ini`. Further configuration may be required.
 - **Difficulty** []
 - **Problems** [🔥]
 - **Safe** [❓]
+
+### ➡️ Liquid Flow
+Lava or water are examples of liquid flow. Due to the number of scheduled block updates, the server may lag if water or lava is placed or drained. It depends entirely on the size and maximum decay.
+
+The impact on performance may only be very slight and does not really significantly impair the server's performance. However, if you really want to go to the extreme, you may make the water flow instantly. 
+
+There are some plugins like [this](https://github.com/Muqsit/AggressiveOptz) and [this](https://github.com/ItsMax123/NoWaterLagg) which I have not used before but may be of interest for you.
+
+- **Efficiency** [✅]
+- **Difficulty** [⭐]
+- **Problems** []
+- **Safe** [✅]
 
 <div align="right">
   <p>Done reading this section?</p>
