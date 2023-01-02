@@ -3,11 +3,12 @@ Methods that can be arguable at times and may require you to fix multiple proble
 
 # ✔️ List of Contents
 - [World Tick](#%EF%B8%8F-world-tick)
+- [Secondary Ticking System](#%EF%B8%8F-secondary-ticking-system)
 - [Movement System](#%EF%B8%8F-movement-system-playerauthinputpacket---playermovementpacket)
 - [TPS Catch-up](#%EF%B8%8F-tps-catch-up)
 
-### ➡️ World Tick
-__**SERVER TICK ≠ WORLD TICK**__
+### ➡️ Delaying World Tick
+__**NOTE: SERVER TICK ≠ WORLD TICK**__
 
 A ticking system is a really great way to have more control over the processes in a server. It enables management of the actions carried out with each tick.
 
@@ -23,21 +24,35 @@ One of those things would be the world tick. Now, compare these two results:
 
 In light of the aforementioned findings, it is evident that world ticking before my modification used more resources than world ticking after my modification.
 
-How was this change implemented? Simply said, **only tick worlds at the tenth tick rather than the first** (it doesn't have to exactly be on the tenth). The consequences of doing so, such as delayed block updates, delayed block placements and delayed entity updates, are fairly obvious. You must be **aware of how to rectify these problems**, which will take some time. You must accept this if you want to see such performance improvements. 
+How was this change implemented? Simply said, **only tick worlds at a later tick rather than the first** (I have used the tenth tick). The consequences of doing so, such as delayed block updates, delayed block placements and delayed entity updates, are fairly obvious.
+
+You must be **aware of how to rectify these problems**, which will take some time. You must accept this if you want to see such performance improvements. 
 
 - **Efficiency** [✅✅✅]
 - **Difficulty** [⭐⭐⭐]
 - **Problems** [🔥🔥🔥]
 - **Safe** [❓]
 
-### ➡️ Movement System (PlayerAuthInputPacket -> PlayerMovementPacket)
-**UPDATE:** I must admit that this [commit](https://github.com/pmmp/PocketMine-MP/commit/01ca14c314f180441343bbdf6cff611064ebe330) along with other [commits](https://github.com/pmmp/PocketMine-MP/commits/5d9f78303726a6ba58cdda8231976f57a54a73c4) have helped to partially fix the problem. It does not, however, always stop or prevent initial sending of movement changes. I don't think that the changes made were an optimal one given that `handleMovement()` already checks for movement. 
+### ➡️ Secondary Ticking System
+Based on PMMP's server ticking system, specific operation such as world ticking, explosions or set/destroyed blocks can be put in a respective queue. 
 
+This system restricts the number of actions that can be performed per tick, which is a great way to avoid lag as it slows down the actions.
+
+An overflow or a memory leak would be among the few problems that could arise. I was able to address this problem by making the limitation proportional to the quantity of actions in the relevant queue. 
+
+Another problem is that it can result in a longer period of lower TPS since the operations in the queue may be delayed for a lengthy time. This is a drawback, although it does stop a sudden drop in TPS. 
+
+- **Efficiency** [✅✅]
+- **Difficulty** [⭐⭐⭐]
+- **Problems** [🔥🔥]
+- **Safe** [❓]
+
+### ➡️ Movement System (PlayerAuthInputPacket -> PlayerMovementPacket)
 You might occasionally ponder how a player sends movement packets to PMMP. Prior to being switched to PlayerAuthInputPacket in this [commit](https://github.com/pmmp/PocketMine-MP/commit/292827a311a8792718b6405975518ef923a47475), PMMP listened to PlayerMovementPacket. 
 
-I'm not arguing that utilizing PlayerAuthInputPacket is bad since it really improves matters because it addresses more issues. But I believe that utilizing PlayerMovementPacket would greatly improve performance. It will affect how players move and using the old movement system is not always a good thing!
+I'm not arguing that utilizing PlayerAuthInputPacket is bad since it really improves the handling of movement as it addresses more issues. However, I believe that utilizing PlayerMovementPacket would improve performance. It does not really affect how players move but this legacy movement system may be neglected in the future.
 
-Since PlayerAuthInputPacket is sent every tick, it **"might cause some performance degradation"**, according to the commit. However, my analysis shows that it significantly influences performance, particularly when there are several players present. 
+Since PlayerAuthInputPacket is sent every tick, it **"might cause some performance degradation"**, according to the commit. However, my analysis shows that it significantly influences performance, particularly when there are many players present. 
 
 Compare these two results:
 
@@ -47,9 +62,11 @@ Compare these two results:
 (after) \
 ![after](https://user-images.githubusercontent.com/63234276/180415383-eb7f01b4-7ecb-4408-97a6-2724333137ef.png)
 
-As you can see, **adopting the old movement method again actually significantly boosts performance**. Since PlayerAuthInputPacket delivers many packets every tick, multiplied by the number of players on the server, it is more sluggish. Yes, PMMP has prevented additional movement updates if there has been no change in movement, however the entire process leading up to the check is significant enough to create delay.
+As you can see, **adopting the old movement method again actually significantly boosts performance**. Since PlayerAuthInputPacket delivers many packets every tick, multiplied by the number of players on the server, it is more sluggish. 
 
-With this change, the movement-related function of PlayerAuthInputPacket would be reversed. But is it worth it?
+I must admit that the handling of the PlayerAuthInputPacket is a lot better now as of 25 July 2022. PMMP has prevented additional movement updates if there has been no change in movement or rotation, however the entire process leading up to the check is significant enough to create delay.
+
+With this change, the movement-related function of PlayerAuthInputPacket would be reversed back to the PlayerMovementPacket.
 
 - **Efficiency** [✅✅]
 - **Difficulty** [⭐⭐]

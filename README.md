@@ -1,19 +1,17 @@
 # AGTHARN's Optimization Theories
 [![Hits](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations.svg?view=today-total&style=flat-square&label=views)](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations/)
 
-## PLEASE READ! 23/7/2022
-The sole purpose of this was only to provide some light over the experiments I have done on PMMP to my friends. It was never intended for the public to read this. Although all the comments I have gotten were negative, I will not let your comments influence my work.
+## PLEASE READ! 2/1/2023
+The sole purpose of this was only to provide some light over the experiments I have done on PMMP to my friends. It was never intended for the public to read this. There may be negative comments that you have but I have sorted out all these findings in separate categories.
 
-This project was also **NOT MEANT FOR ANY PRODUCTION PURPOSES**. All of these methods can cause problems for your server, especially if your server requires PvP action. It is indeed undeniable that PlayerAuthInput is way better than PlayerMovement and I must accept that. **I only made this so as to document my findings after my experiments on PMMP**. Even if you used these methods, you MUST accept all the consequences involved! Overall, all these methods are entirely arguable.
-
-### **THESE ARE EXPERIMENTS! DO NOT TURN THEM INTO IDEAS!**
+⚠️ **You should be cautious when using these methods for production purposes**. All of these methods will cause some sort of a problem for your server. Even if you used these methods, you MUST accept all the consequences involved! Overall, all these methods are entirely arguable. ⚠️
 
 ## Why did I want to spend time on such experiments?
-I myself run a PocketMine-MP (PMMP) server, and I've been dealing with the same problem since the server's inception - lag brought on by high player counts rendering PMMP servers virtually unplayable.
+I myself have run a PocketMine-MP (PMMP) server, and I've been dealing with the same problem since the server's inception - lag brought on by high player counts rendering PMMP servers virtually unplayable. This is especially visible for servers that have a lot of worlds loaded and players constantly loading chunks.
 
-Many individuals have frequently used the argument that the problem is with the server's plugins or that PMMP is single-threaded. That's not totally true, but it's comparable.
+Many individuals have frequently used the argument that the problem is with the server's plugins or that PMMP is single-threaded. That's not entirely true, but it's comparable.
 
-One day, I pondered how much I could change PMMP in order to push it as far as it could go. The experiments I have produced offer favorable performance enhancements.
+One day, I pondered how much I could change PMMP in order to push it as far as it could go. The experiments I have produced offer favorable performance enhancements but may have unintended consequences.
 
 # 🌟 Table of Contents
 | Type | Description |

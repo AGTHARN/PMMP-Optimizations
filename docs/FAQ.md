@@ -25,17 +25,17 @@ The player count displayed for the modified version is inaccurate. It's a proble
 
 # Specific Category - Somewhat Reliable
 <details>
-<summary>➡️ You do realize making the world tick only twice a second is a terrible idea?</summary>
+<summary>➡️ You do realize making the world tick later is a terrible idea?</summary>
 <br>
-On this point, I do agree with you. It would be challenging to employ that approach though since you have to manually repair the problems that result from doing so. Make sure entity updates are not impacted by world tick modifications! You must not interfere with player updates since entities must update correctly.
+On this point, I do agree with you. It would be challenging to employ that approach though since you have to manually repair the problems that result from doing so. You have to ensure that entity updates are not impacted by world tick modifications. You must not interfere with player updates since entities must update correctly.
 
-If you think PMMP shouldn't be consuming so many resources for the world, I want you to attempt managing a 100-player SkyBlock server. Collecting information about such things from actual players is challenging. 
+If you think PMMP shouldn't be consuming so many resources for the world, I would like you to attempt managing a 80-player SkyBlock server. Collecting information from actual players is challenging. 
 </details>
 
 <details>
 <summary>➡️ The legacy movement system is not great. Why'd you want to use it again?</summary>
 <br>
-I do also agree with you. Server authoritative movement will reduce the number of issues and exposed vulnerabilities. However, only use the legacy movement if you're willing to sacrifice them for increased performance.
+I do also agree with you. Server authoritative movement will reduce the number of issues and exposed vulnerabilities. However, only use the legacy movement if you're willing to sacrifice them for better performance.
 </details>
 
 # Specific Category - Unreliable
