@@ -4,6 +4,7 @@ Methods that should be safe as long as you have an idea of what you're doing.
 # ✔️ List of Contents
 - [Asynchronous Explosion Calculator](#%EF%B8%8F-asynchronous-explosion-calculator)
 - [Unnecessary Entity Updates](#%EF%B8%8F-unnecessary-entity-updates)
+- [Item Entities](#%EF%B8%8F-item-entities)
 - [XP Orbs](#%EF%B8%8F-xp-orbs)
 - [PHP 8 JIT](#%EF%B8%8F-php-8-jit)
 - [Liquid Flow](#%EF%B8%8F-liquid-flow)
@@ -28,6 +29,20 @@ For instance, minions are commonly present in most servers, and players enjoy pi
 Therefore, removing pointless updates from the entity class's `onUpdate()` and `entityBaseTick()` methods would help. 
 
 How so you may ask? For instance, I don't anticipate that minions will have any motion updates or health/hunger updates so those were removed. **Performance was then greatly enhanced just by eliminating unnecessary updates**. You may apply this to any type of entity.
+
+- **Efficiency** [✅✅]
+- **Difficulty** [⭐]
+- **Problems** []
+- **Safe** [✅]
+
+### ➡️ Item Entities
+Items that a player drops are referred to as item entities. Within a certain radius, it is common behavior for item entities to stack with other item entities of the same type.
+
+Since there can be many item entities that spawn, especially when there are a lot of players on your server or when explosions have been set, I believe that this radius is insufficient.
+
+I increased the merging radius by three times, but you are free to choose any value you want. By making this adjustment, the amount of item entities on the server will be reduced, possibly reducing lag slightly.
+
+Items that are dropped may move further away from the player as a result, but I don't think that's a major concern.
 
 - **Efficiency** [✅✅]
 - **Difficulty** [⭐]
