@@ -5,6 +5,7 @@ Methods that can be arguable at times and may require you to fix multiple proble
 - [World Tick](#%EF%B8%8F-world-tick)
 - [Secondary Ticking System](#%EF%B8%8F-secondary-ticking-system)
 - [Movement System](#%EF%B8%8F-movement-system-playerauthinputpacket---playermovementpacket)
+- [Making Use of Timings Report](#%EF%B8%8F-making-use-of-timings-report)
 - [TPS Catch-up](#%EF%B8%8F-tps-catch-up)
 
 ### ➡️ Delaying World Tick
@@ -34,7 +35,7 @@ You must be **aware of how to rectify these problems**, which will take some tim
 - **Safe** [❓]
 
 ### ➡️ Secondary Ticking System
-Based on PMMP's server ticking system, specific operation such as world ticking, explosions or set/destroyed blocks can be put in a respective queue. 
+Based on PMMP's server ticking system, specific operation such as world ticking, explosions, set/destroyed blocks, movement updates or entity ticking can be put in a respective queue. 
 
 This system restricts the number of actions that can be performed per tick, which is a great way to avoid lag as it slows down the actions.
 
@@ -48,6 +49,7 @@ Another problem is that it can result in a longer period of lower TPS since the 
 - **Safe** [❓]
 
 ### ➡️ Movement System (PlayerAuthInputPacket -> PlayerMovementPacket)
+
 You might occasionally ponder how a player sends movement packets to PMMP. Prior to being switched to PlayerAuthInputPacket in this [commit](https://github.com/pmmp/PocketMine-MP/commit/292827a311a8792718b6405975518ef923a47475), PMMP listened to PlayerMovementPacket. 
 
 I'm not arguing that utilizing PlayerAuthInputPacket is bad since it really improves the handling of movement as it addresses more issues. However, I believe that utilizing PlayerMovementPacket would improve performance. It does not really affect how players move but this legacy movement system may be neglected in the future.
@@ -72,6 +74,24 @@ With this change, the movement-related function of PlayerAuthInputPacket would b
 - **Difficulty** [⭐⭐]
 - **Problems** [🔥]
 - **Safe** [✅]
+
+### ➡️ Making Use of Timings Report
+Timings are a wonderful technique to assess your server's performance. It enables you to identify the server components that are generating lag. Large player or plugin counts are common causes of lag.
+
+Repeated tasks, especially those that run every tick, might contribute to lag. It is a good idea to look at your server's timings to determine if any repeating tasks are generating lag. If so, I suggest that you optimize the code, extend the interval, or remove the task.
+
+Event listeners are potential contributors to lag. Due to how frequently events like PlayerMoveEvent and PlayerJoinEvent are triggered, plugins that listen to such events are probably what's lagging the server. You could make every effort to optimize your code. 
+
+It's challenging to eliminate lag caused by PocketMine-MP itself because you might need to make changes to the source code. You can use some of the techniques in this document to fix lag issues with PocketMine-MP directly.
+
+I personally wouldn't suggest you to make any changes to the source code because it is unlikely to be safe and could result in unpleasant surprises, especially if you are a novice developer. The server ticking system and players are usually at blame for the majority of the lag in PocketMine-MP, which I have both described in this document. 
+
+You may receive a formatted timings report by entering `timings paste` in your server's console. You can then use the link given to analyze the report.
+
+- **Efficiency** [✅✅]
+- **Difficulty** [❓]
+- **Problems** [❓]
+- **Safe** [❓]
 
 ### ➡️ TPS Catch-up
 This is entirely different from [Tick Skipping](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/UNRELIABLE.md#%EF%B8%8F-tick-skipping). When the server is lagging behind in some ticks, the server will **tick even faster until its back on track**. This is a way to make the server act as though it is running late for school.
