@@ -1,23 +1,26 @@
-# AGTHARN's Optimization Theories
+# AGTHARN's Optimization Methods
 [![Hits](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations.svg?view=today-total&style=flat-square&label=views)](https://hits.sh/github.com/AGTHARN/PMMP-Optimizations/)
 
-## PLEASE READ! 2/1/2023
-The sole purpose of this was only to provide some light over the experiments I have done on PMMP to my friends. It was never intended for the public to read this. There may be negative comments that you have but I have sorted out all these findings in separate categories.
+This document includes arguable ways to optimize **PocketMine-MP** (PMMP) gathered from my research and experiments. 
 
-⚠️ **You should be cautious when using these methods for production purposes**. All of these methods will cause some sort of a problem for your server. Even if you used these methods, you MUST accept all the consequences involved! Overall, all these methods are entirely arguable. ⚠️
+I wanted to share this document with the community so that you could have a better understanding of why your server might occasionally be sluggish. You might have some unfavorable remarks, but I've categorized all of my findings separately.
 
-## Why did I want to spend time on such experiments?
-I myself have run a PocketMine-MP (PMMP) server, and I've been dealing with the same problem since the server's inception - lag brought on by high player counts rendering PMMP servers virtually unplayable. This is especially visible for servers that have a lot of worlds loaded and players constantly loading chunks.
+The majority of these methods are ones I advise against utilizing, but I've included them nonetheless so as to be thorough. 
 
-Many individuals have frequently used the argument that the problem is with the server's plugins or that PMMP is single-threaded. That's not entirely true, but it's comparable.
+> ⚠️ **You should be cautious when using these methods for production purposes**. All of these methods will cause some sort of a problem for your server. Even if you used these methods, you MUST accept all the consequences involved! Overall, all these methods are entirely arguable. ⚠️
 
-One day, I pondered how much I could change PMMP in order to push it as far as it could go. The experiments I have produced offer favorable performance enhancements but may have unintended consequences.
+## Why would I want to spend time on such experiments?
+I personally have run a PocketMine-MP (PMMP) server, and I've been dealing with the same problem since the server's inception - lag brought on by high player counts rendering PMMP servers virtually unplayable. This is especially visible for servers that have a lot of worlds loaded, and players constantly loading chunks and triggering events.
+
+Many individuals have frequently used the argument that the problem is with the server's plugins or that PMMP is single-threaded. That's not entirely true, but it's definitely comparable.
+
+One day, I pondered how much I could adjust the mechanics of PMMP in order to push it as far as it could go. The experiments I have produced offer favorable performance enhancements but may have unintended consequences.
 
 # 🌟 Table of Contents
 | Type | Description |
 | ----------- | ------- |
 | [Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/RELIABLE.md) | Methods that should be safe as long as you have an idea of what you're doing |
-| [Somewhat Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/SOMEWHAT_RELIABLE.md) | Methods that can be arguable at times and may require you to fix multiple problems |
+| [Somewhat Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/SOMEWHAT_RELIABLE.md) | Methods that can be arguable at times and may require you to fix even more problems |
 | [Unreliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/UNRELIABLE.md) | Methods that are entirely questionable and will definitely break mechanics in your server |
 | [Frequently Asked Questions](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/FAQ.md) | Questions that you may have on this document |
 
@@ -34,4 +37,4 @@ One day, I pondered how much I could change PMMP in order to push it as far as i
 | (player count is incorrect! it's a problem i have made on my end! however, since it is a skyblock server, the number of players is equivalent to the number of worlds loaded!) |
 | ![after](https://user-images.githubusercontent.com/63234276/180207462-6a27702e-25f9-4731-bc7e-11b63d17b5d4.png) |
 
-The modifications I've made are ones that a skilled developer could do with ease. Since they are not the finest, I do not intend to release a fork of these modifications. However, I'd like to see somebody else give it a go.
+*The modifications I've made are ones that a skilled developer could do with ease. Since they are not the finest, I do not intend to release a fork of these modifications. However, I'd like to see somebody else give it a go.*
