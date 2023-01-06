@@ -1,7 +1,13 @@
-# FAQ
+# ❓ FAQ
 Questions that you may have on this document.
 
 # General Questions
+
+<details>
+<summary>➡️ Can I use some of these methods in my own server?</summary>
+<br>
+Yes. If you intend to use any of the methods in production, you should only attempt to apply reliable methods to your server for safety reasons. You need to be cautious of any negative effects. I disclaim all responsibility for any problems that may result from adopting these techniques. 
+</details>
 
 <details>
 <summary>➡️ Will these methods break my server?</summary>

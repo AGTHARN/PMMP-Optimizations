@@ -19,10 +19,11 @@ One day, I pondered how much I could adjust the mechanics of PMMP in order to pu
 # 🌟 Table of Contents
 | Type | Description |
 | ----------- | ------- |
-| [Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/RELIABLE.md) | Methods that should be safe as long as you have an idea of what you're doing |
-| [Somewhat Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/SOMEWHAT_RELIABLE.md) | Methods that can be arguable at times and may require you to fix even more problems |
-| [Unreliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/UNRELIABLE.md) | Methods that are entirely questionable and will definitely break mechanics in your server |
-| [Frequently Asked Questions](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/FAQ.md) | Questions that you may have on this document |
+| [🟢 Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/RELIABLE.md) | Methods that should be safe as long as you have an idea of what you're doing |
+| [🟡 Somewhat Reliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/SOMEWHAT_RELIABLE.md) | Methods that can be arguable at times and may require you to fix even more problems |
+| [🔴 Unreliable Methods](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/UNRELIABLE.md) | Methods that are entirely questionable and will definitely break mechanics in your server |
+| [🏳️ A Last Resort](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/LAST_RESORT.md) | If PMMP just doesn't work out for performance |
+| [❓ Frequently Asked Questions](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/FAQ.md) | Questions that you may have on this document |
 
 # 💡 Timings
 > ❗ **The `Average Players` shown in the images below are incorrect due to problems on my end. If you do think that the results are skewed, if necessary, you may perform your own computations after trying out some of the optimization methods.** The number of players is equivalent to the number of worlds loaded. ❗

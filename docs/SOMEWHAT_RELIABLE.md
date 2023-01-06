@@ -1,7 +1,7 @@
-# Somewhat Reliable Methods
+# 🟡 Somewhat Reliable Methods
 Methods that can be arguable at times and may require you to fix multiple problems.
 
-# ✔️ List of Contents
+# List of Contents
 - [World Tick](#%EF%B8%8F-world-tick)
 - [Secondary Ticking System](#%EF%B8%8F-secondary-ticking-system)
 - [Movement System](#%EF%B8%8F-movement-system-playerauthinputpacket---playermovementpacket)

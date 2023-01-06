@@ -1,7 +1,7 @@
-# Reliable Methods
+# 🟢 Reliable Methods
 Methods that should be safe as long as you have an idea of what you're doing.
 
-# ✔️ List of Contents
+# List of Contents
 - [Asynchronous Explosion Calculator](#%EF%B8%8F-asynchronous-explosion-calculator)
 - [Unnecessary Entity Updates](#%EF%B8%8F-unnecessary-entity-updates)
 - [Item Entities](#%EF%B8%8F-item-entities)

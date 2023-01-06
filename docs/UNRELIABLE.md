@@ -1,4 +1,7 @@
-# ✔️ List of Contents
+# 🔴 Unreliable Methods
+Methods that are entirely questionable and will definitely break mechanics in your server.
+
+# List of Contents
 - [Tick Skipping](#%EF%B8%8F-tick-skipping)
 
 ### ➡️ Tick Skipping
