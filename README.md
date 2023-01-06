@@ -25,8 +25,7 @@ One day, I pondered how much I could adjust the mechanics of PMMP in order to pu
 | [Frequently Asked Questions](https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/FAQ.md) | Questions that you may have on this document |
 
 # 💡 Timings
-
-**Due to the player count, the findings may be skewed, however if necessary, you can perform your own computations.**
+> ❗ **The `Average Players` shown in the images below are incorrect due to problems on my end. If you do think that the results are skewed, if necessary, you may perform your own computations after trying out some of the optimization methods.** The number of players is equivalent to the number of worlds loaded. ❗
 
 | [Before Modifications](https://timings.pmmp.io/?id=222286) |
 | ----------- |
@@ -34,7 +33,6 @@ One day, I pondered how much I could adjust the mechanics of PMMP in order to pu
 
 | [After Modifications](https://timings.pmmp.io/?id=227338) |
 | ----------- |
-| (player count is incorrect! it's a problem i have made on my end! however, since it is a skyblock server, the number of players is equivalent to the number of worlds loaded!) |
 | ![after](https://user-images.githubusercontent.com/63234276/180207462-6a27702e-25f9-4731-bc7e-11b63d17b5d4.png) |
 
-*The modifications I've made are ones that a skilled developer could do with ease. Since they are not the finest, I do not intend to release a fork of these modifications. However, I'd like to see somebody else give it a go.*
+*Writer's Note: The modifications I've made are ones that a skilled developer could do with ease. Since they are not the finest, I do not intend to release a fork of these modifications. However, I'd like to see somebody else give it a go.*
