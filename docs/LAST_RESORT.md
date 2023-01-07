@@ -46,3 +46,8 @@ Here are a few server applications that I believe deserve to be mentioned. Altho
 **❌ Disadvantages:**
 - **C++, JavaScript, Lua, .NET** - These can all be difficult to learn and more difficult to debug than some other languages.
 - **More Resource Intensive** - C++, JavaScript, Lua, and .NET can use more memory and CPU, which can make them less efficient than some other languages.
+
+<div align="right">
+  <p>Done reading this section?</p>
+    <a href = "https://github.com/AGTHARN/PMMP-Optimizations/blob/main/docs/FAQ.md" target = "_self">FAQ ➡️</a>
+</div>
