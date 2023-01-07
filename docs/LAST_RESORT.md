@@ -8,17 +8,17 @@ Here are a few server applications that I believe deserve to be mentioned. Altho
 *If you need a full list of active/inactive server softwares, you can check out [this](https://wiki.bedrock.dev/servers/server-software.html) list maintained by the Bedrock OSS Organization.*
 
 ### 🖥️ [PowerNukkitX (Java)](https://github.com/PowerNukkitX/PowerNukkitX)
-> "PowerNukkitX is a branch version based on PowerNukkit, developed and maintained by PowerNukkitX, any problems can be submitted to Issue feedback."
+> "PowerNukkitX is a branch version based on PowerNukkit, developed and maintained by PowerNukkitX."
 
 **✅ Advantages:**
-- **Java** - Java is a more mature and is a statically-typed language than PHP with a much larger ecosystem. This means that there are more developers who can help you with your issues.
+- **Java** - Java is a more mature than PHP with a much larger ecosystem and is a statically-typed language. This means that there are more developers who can help you with your issues.
 - **Less CPU-intensive** - Java is generally considered to be faster and more efficient than PHP, especially when it comes to CPU-intensive tasks.
 - **More plugins** - There are more plugins available for Nukkit than for PMMP. This would allow you to choose from a wider variety of plugins.
 
 **❌ Disadvantages:**
-- **Java** - Java has slightly less features than PHP and may require you to do more work to achieve the same results. Java has no support for features like operator overloading.
+- **Java** - Java has slightly less features than PHP and may require you to do more work to achieve the same results. Java also has no support for features like operator overloading.
 - **More RAM-intensive** - Java is generally considered to be more RAM-intensive than PHP which means that you will need more RAM to run your server.
-- **More difficult to set up/maintain** - Java is a more complex language to learn and apply than PHP. This may make it more difficult to set up and maintain your server.
+- **More difficult to set up/maintain** - Java is a more complex language to learn and apply as compared to PHP. This may make it more difficult to set up and maintain your server.
 
 ### 🖥️ [Dragonfly (Go)](https://github.com/df-mc/dragonfly)
 > "Dragonfly is a heavily asynchronous server software for Minecraft Bedrock Edition written in Go. It was written with scalability and simplicity in mind and aims to make the process of setting up a server and modifying it easy. Unlike other Minecraft server software, Dragonfly is generally used as a library to extend."

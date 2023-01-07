@@ -34,8 +34,8 @@ You must be **aware of how to rectify these problems**, which will take some tim
 - **Problems** [🔥🔥🔥]
 - **Safe** [❓]
 
-### ➡️ Secondary Ticking System
-Based on PMMP's server ticking system, specific operation such as world ticking, explosions, set/destroyed blocks, movement updates or entity ticking can be put in a respective queue. 
+### ➡️ Secondary Queue Ticking System
+Based on PMMP's server ticking system, specific operation such as world ticking, explosions, block updates, movement updates or entity ticking can be put in a respective queue. 
 
 This system restricts the number of actions that can be performed per tick, which is a great way to avoid lag as it slows down the actions.
 
@@ -80,9 +80,9 @@ Timings are a wonderful technique to assess your server's performance. It enable
 
 Repeated tasks, especially those that run every tick, might contribute to lag. It is a good idea to look at your server's timings to determine if any repeating tasks are generating lag. If so, I suggest that you optimize the code, extend the interval, or remove the task.
 
-Event listeners are potential contributors to lag. Due to how frequently events like PlayerMoveEvent and PlayerJoinEvent are triggered, plugins that listen to such events are probably what's lagging the server. You could make every effort to optimize your code. 
+Event listeners are potential contributors to lag. Due to how frequently events like `PlayerMoveEvent` and `PlayerJoinEvent` are triggered, plugins that listen to such events are probably what's lagging the server. You could make every effort to optimize your code. 
 
-It's challenging to eliminate lag caused by PocketMine-MP itself because you might need to make changes to the source code. You can use some of the techniques in this document to fix lag issues with PocketMine-MP directly.
+It's challenging to eliminate lag caused by PocketMine-MP itself because you might need to make changes to the source code. You can use some of the techniques in this document to fix lag issues with PocketMine-MP directly. Common causes of lag are `Player Network Receive`, `Player Network Send`, `Plugin Scheduler`, `PlayerAuthInputPacket`, `InventoryTransactionPacket`, `DataPacketReceiveEvent` and `tickEntity`.
 
 I personally wouldn't suggest you to make any changes to the source code because it is unlikely to be safe and could result in unpleasant surprises, especially if you are a novice developer. The server ticking system and players are usually at blame for the majority of the lag in PocketMine-MP, which I have both described in this document. 
 
